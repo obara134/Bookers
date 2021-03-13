@@ -1,4 +1,8 @@
-
+<% if flash[:notice] %>
+     <p style="color:red" id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
 <p><br><strong>title:</strong><%= @book.title %></p>
 
 <p><br><strong>body:</strong><%= @book.body %></p>
